@@ -76,7 +76,7 @@ public class SQLiteConnection: Connection {
 
     static func createAutoIncrement(_ type: String, _ primaryKey: Bool) -> String {
         if primaryKey && type == "integer" {
-            return type + "AUTOINCREMENT"
+            return type + " AUTOINCREMENT"
         } else {
             return ""
         }
